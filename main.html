@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>前端面试题收集总结</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .page {
+        width: 700px;
+        margin: 0 auto;
+    }
+    
+    li {
+        margin-top: 15px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #000000;
+    }
+    
+    .headr {
+        background-color: #5fd857;
+        width: 100%;
+        line-height: 180px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+    }
+    
+    a:hover {
+        color: #636363;
+    }
+    
+    .title {
+        font-size: 32px;
+        margin-top: 30px;
+        font-weight: bold;
+        color: #25b668;
+        position: relative;
+        display: inline-block;
+    }
+    
+    .title::after {
+        content: "";
+        width: 100%;
+        height: 5px;
+        position: absolute;
+        bottom: 6px;
+        left: 0;
+        opacity: 0.3;
+        background-color: #25b668;
+    }
+    
+    .tips {
+        font-size: 10px;
+        margin: 20px;
+        opacity: 0.5;
+        text-align: center;
+    }
+    
+    @media (max-width:1080px) {
+        .page {
+            width: 80%;
+            font-size: 13px;
+        }
+        .headr {
+            font-size: 20px;
+            line-height: 100px;
+        }
+        .title {
+            font-size: 25px;
+        }
+    }
+</style>
+
+<body>
+    <div>
+        <div class="headr">
+            <h2>前端面试题收集总结</h2>
+        </div>
+        <div class="page">
+            <ul>
+                <div class="title">JS篇</div>
+                <li>
+                    <a target="_blank" href="https://www.runoob.com/jsref/met-win-open.html">window.open 方法</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://segmentfault.com/a/1190000022304066">前端跨域的方法(两种及以上)</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://blog.csdn.net/qq_37746973/article/details/80297150">JS获取对象键值对中key值的方法</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://blog.csdn.net/yujiayinshi/article/details/49947935">手机和邮箱的正则表达式</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://juejin.cn/post/6844904197595332622">浅拷贝与深拷贝</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://blog.csdn.net/qq_37746973/article/details/80297150">遍历一个对象里面的所有key值有什么方法</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.jianshu.com/p/2537f7d47bfa">https中的s代表什么</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://juejin.cn/post/6844903958624878606">http三次握手四次挥手</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.cnblogs.com/zhuzhenwei918/p/6416880.html">原生轮播图实现思路</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.cnblogs.com/ZengYunChun/p/9323556.html">前端移动元素大概有哪几种方法</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://zhuanlan.zhihu.com/p/127761066">HTTP Keep-Alive的作用</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.jianshu.com/p/1bca605115e2">axios的底层用了什么</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.jianshu.com/p/bfa0c22f5a6d">this指向？如何改变？</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://zhuanlan.zhihu.com/p/26475137">箭头函数中的this时怎么绑定的？</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://segmentfault.com/q/1010000014867708">Promise中的then的异常处理方法和catch有什么区别？</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://juejin.cn/post/6844904164607131655">页面的状态管理有哪些方法</a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.ruanyifeng.com/blog/2020/12/fetch-tutorial.html">新的fetch请求时怎么实现的</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://segmentfault.com/a/1190000016788484">await后面如果接了一个promise,return null或return false它接下来会执行什么 应该执行resolve</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://zhuanlan.zhihu.com/p/85438296">实现bind方法有什么思路</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.cnblogs.com/starry-skys/p/11911568.html">画一下原型链？ prototype和__proto__有什么区别</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://juejin.cn/post/6844903704663949325">new实现</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://segmentfault.com/a/1190000006178770">webpack入门</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://blog.csdn.net/xiaohu12685/article/details/80914767"> js中本地存储有哪些？有什么不同</a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.ityouknow.com/it/2019/05/11/cookie-session.html">cookie中的session了解</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://blog.csdn.net/u011240877/article/details/76582670"> npm中的工具了解</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://juejin.cn/post/6844903512845860872">JS的执行机制</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://segmentfault.com/a/1190000014045184">for循环内setTimeout顺序输出的解法</a>
+                </li>
+                <li>
+                    <a target="_blank" href=""></a>
+                </li>
+                <li>
+                    <a target="_blank" href=""></a>
+                </li>
+                <li>
+                    <a target="_blank" href=""></a>
+                </li>
+                <li>
+                    <a target="_blank" href=""></a>
+                </li>
+                <li>
+                    <a target="_blank" href=""></a>
+                </li>
+                <li>
+                    <a target="_blank" href=""></a>
+                </li>
+                <li>
+                    <a target="_blank" href=""></a>
+                </li>
+                <li>
+                    <a target="_blank" href=""></a>
+                </li>
+                <li>
+                    <a target="_blank" href=""></a>
+                </li>
+                <li>
+                    <a target="_blank" href=""></a>
+                </li>
+                <li>
+                    <a target="_blank" href=""></a>
+                </li>
+                <li>
+                    <a target="_blank" href=""></a>
+                </li>
+                <div class="title">VUE篇</div>
+                <li>
+                    <a target="_blank" href="https://blog.csdn.net/qq_21132509/article/details/83504522">Vue中的定时器，一般在哪个生命周期中清除</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.liaoxuefeng.com/wiki/1022910821149312/1109527162256416">Vue 的双向绑定原理及实现</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://blog.csdn.net/csl125/article/details/88885554">Vue 组件间的事件传值之（EventBus）</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://juejin.cn/post/6844903602356502542">Vue 生命周期深入</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.jianshu.com/p/b70f1668d08f">Vue中watch用法详解</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://juejin.cn/post/6844903767553359885">Vue v-if 与 v-show 的区别</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://juejin.cn/post/6844903812130422792">Vue作用域插槽</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.zhihu.com/question/61064119">v-for中key值的作用？</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://segmentfault.com/a/1190000022700216">Vue组件之间的传值</a>
+                </li>
+                <li>
+                    <a target="_blank" href=""></a>
+                </li>
+                <li>
+                    <a target="_blank" href=""></a>
+                </li>
+                <li>
+                    <a target="_blank" href=""></a>
+                </li>
+                <li>
+                    <a target="_blank" href=""></a>
+                </li>
+                <li>
+                    <a target="_blank" href=""></a>
+                </li>
+                <li>
+                    <a target="_blank" href=""></a>
+                </li>
+                <li>
+                    <a target="_blank" href=""></a>
+                </li>
+                <li>
+                    <a target="_blank" href=""></a>
+                </li>
+                <li>
+                    <a target="_blank" href=""></a>
+                </li>
+                <li>
+                    <a target="_blank" href=""></a>
+                </li>
+                <li>
+                    <a target="_blank" href=""></a>
+                </li>
+                <li>
+                    <a target="_blank" href=""></a>
+                </li>
+                <li>
+                    <a target="_blank" href=""></a>
+                </li>
+                <li>
+                    <a target="_blank" href=""></a>
+                </li>
+                <li>
+                    <a target="_blank" href=""></a>
+                </li>
+                <li>
+                    <a target="_blank" href=""></a>
+                </li>
+                <li>
+                    <a target="_blank" href=""></a>
+                </li>
+                <div class="title">CSS篇</div>
+                <li>
+                    <a target="_blank" href="https://blog.csdn.net/u012426959/article/details/79395132">盒子垂直水平居中的几种方法</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://dcpnonstop.github.io/2018/10/12/css%E9%80%89%E6%8B%A9%E5%99%A8%E5%8F%8A%E5%85%B6%E4%BC%98%E5%85%88%E7%BA%A7%E6%8E%92%E5%BA%8F/">css选择器的优先级，并进行排序</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://blog.csdn.net/rain_zhh/article/details/108907843">BFC是什么？有哪几种实现方式？适用场景？</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://segmentfault.com/a/1190000004865198">清除浮动有哪些方法</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.cnblogs.com/GeniusLyzh/p/4624805.html">块级元素间隙问题</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.jianshu.com/p/f143ed3097e4">轮播图抖动问题</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://blog.csdn.net/qq_31915745/article/details/72524465">理解为何需要清除浮动及清除浮动的方法</a>
+                </li>
+                <li>
+                    <a target="_blank" href=""></a>
+                </li>
+                <li>
+                    <a target="_blank" href=""></a>
+                </li>
+                <div class="title">HTML篇</div>
+                <li>
+                    <a target="_blank" href="https://www.jeffjade.com/2015/06/24/2015-06-24-css-block-inline/">行内元素、块元素有哪些？它们有什么不同？</a>
+                </li>
+                <li>
+                    <a target="_blank" href=""></a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.html.cn/qa/html5/18948.html">H5新标签</a>
+                </li>
+                <li>
+                    <a target="_blank" href=""></a>
+                </li>
+                <li>
+                    <a target="_blank" href=""></a>
+                </li>
+                <li>
+                    <a target="_blank" href=""></a>
+                </li>
+                <li>
+                    <a target="_blank" href=""></a>
+                </li>
+                <li>
+                    <a target="_blank" href=""></a>
+                </li>
+            </ul>
+        </div>
+        <div class="tips">以上题目与答案均收集于互联网</div>
+    </div>
+</body>
+
+</html>
