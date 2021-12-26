@@ -5,6 +5,12 @@
     </div>
     <div class="page">
       <el-collapse>
+        <div class="title">推荐阅读</div>
+        <ul>
+          <li v-for="item in recommend" :key="item.title">
+            <a :href="item.link">{{ item.title }}</a>
+          </li>
+        </ul>
         <ul v-for="data in DATA" :key="data.title">
           <div class="title" :id="data.id">{{ data.title }}</div>
           <li v-for="(item, index) in data.list" :key="item.title">
@@ -62,12 +68,7 @@ export default {
               title: "两种盒模型分别说一下",
               link: "",
               detail:
-                "标准模型和 IE模型（怪异盒子）\n\nbox-sizing: conent-box; 将盒子设置为标准模型（盒子默认为标准模型）\nbox-sizing: border-box; 将盒子设置为 IE 模型（也叫做怪异盒子）\n\n标准模型  widt = content\n怪异模型  widt = content + padding + border",
-            },
-            {
-              title: "如何垂直居中",
-              link: "https://www.jianshu.com/p/086364d3d5e2",
-              detail: "",
+                "标准模型和 IE模型（怪异盒子）\n\nbox-sizing: conent-box; 将盒子设置为标准模型（盒子默认为标准模型）\nbox-sizing: border-box; 将盒子设置为 IE 模型（也叫做怪异盒子）\n\n标准模型  width = content\n怪异模型  width = content + padding + border",
             },
             {
               title: "flex 怎么用，常用属性有哪些？",
@@ -464,7 +465,8 @@ export default {
             {
               title: "画一下原型链？ prototype和__proto__有什么区别",
               link: "https://www.cnblogs.com/starry-skys/p/11911568.html",
-              detail: "",
+              detail:
+                "JavaScript是面向对象的，每个实例对象都有一个__proto__属性，该属性指向它的原型对象，这个实例对象的构造函数有一个原型属性prototype,与实例的proto属性指向同一个对象。当一个对象在查找一个属性的时候，自身没有就会根据__proto__向它的原型进行查找，如果都没有，则向它的原型的原型继续查找，直到查到Object.prototype.proto_为null,这样也就形成了原型链。",
             },
             {
               title: "new实现",
@@ -697,6 +699,12 @@ export default {
           title: "CSS篇",
           id: "css",
           list: [
+            {
+              title: "link与@import的区别",
+              link: "https://www.cnblogs.com/zhuzhenwei918/p/6009767.html",
+              detail:
+                "          1.link是XHTML标签，除了加载CSS外，还可以定义RSS等其他事务；@import属于CSS范畴，只能加载CSS。\n          \n2.link引用CSS时，在页面载入时同时加载；@import需要页面网页完全载入以后加载，所以一般我们不推荐使用@import方法。\n         \n3.link是XHTML标签，无兼容问题；@import是在CSS2.1提出的，低版本的浏览器不支持，从这点来说，我们同样不推荐使用@import方法。\n          \n4.link支持使用Javascript控制DOM去改变样式；而@import不支持。",
+            },
             {
               title: "盒子垂直水平居中的几种方法",
               link: "https://blog.csdn.net/u012426959/article/details/79395132",
@@ -939,7 +947,7 @@ export default {
 
             {
               title: "一个页面从输入 URL 到页面加载显示完成，这个过程中都发生了什么？",
-              link: "",
+              link: "https://segmentfault.com/a/1190000006879700",
               detail:
                 "分为4个步骤：\n（1），当发送一个URL请求时，不管这个URL是Web页面的URL还是Web页面上每个资源的URL，浏览器都会开启一个线程来处理这个请求，同时在远程DNS服务器上启动一个DNS查询。这能使浏览器获得请求对应的IP地址。\n（2）， 浏览器与远程Web服务器通过TCP三次握手协商来建立一个TCP/IP连接。该握手包括一个同步报文，一个同步-应答报文和一个应答报文，这三个报文在 浏览器和服务器之间传递。该握手首先由客户端尝试建立起通信，而后服务器应答并接受客户端的请求，最后由客户端发出该请求已经被接受的报文。\n（3），一旦TCP/IP连接建立，浏览器会通过该连接向远程服务器发送HTTP的GET请求。远程服务器找到资源并使用HTTP响应返回该资源，值为200的HTTP响应状态表示一个正确的响应。\n（4），此时，Web服务器提供资源服务，客户端开始下载资源。\n\n请求返回后，便进入了我们关注的前端模块\n简单来说，浏览器会解析HTML生成DOM Tree，其次会根据CSS生成CSS Rule Tree，而javascript又可以根据DOM API操作DOM",
             },
@@ -997,6 +1005,24 @@ export default {
                 "mocha+chai是比较流行的测试框架‘套装’，能实现一些基本的前端测试如函数功能测试，模拟登陆，异步测试,流程测试等\nmocha是一个测试工具库，它只纯粹对测试行为(过程)进行描述；而chai是一个断言（推断）库，它可以将测试结果进行各种判断，以此推断是否符合预期，因此两者常常进行组合使用",
             },
           ],
+        },
+      ],
+      recommend: [
+        {
+          title: "前端程序员面试秘籍--大厂面试题汇总",
+          link: "http://static.kancloud.cn/damoxueyuan/damolaozu/1199317",
+        },
+        {
+          title: "3k Start 前端总结",
+          link: "https://github.com/CavsZhouyou/Front-End-Interview-Notebook",
+        },
+        {
+          title: "3年渣渣前端的面试分享",
+          link: "https://juejin.cn/post/6844904163831185422",
+        },
+        {
+          title: "VUE 248+个知识点（面试题）为你保驾护航",
+          link: "https://zhuanlan.zhihu.com/p/71229672",
         },
       ],
       list: [],
